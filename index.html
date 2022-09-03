@@ -14,6 +14,9 @@
 	<meta name="title" content="Xuan Rui Yong"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 <body>
   <nav class="navbar">
     <div class="max-width">
@@ -21,6 +24,7 @@
       <ul class="menu">
         <li><a href="index">Home</a></li>
         <li><a href="blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -45,6 +49,83 @@
             <div class="column right">
                 <div class="text">I'm Xuan Rui Yong and I'm a <span class="typing-2"></span></div>
                 <p>Hi, I am Xuan Rui Yong and welcome to my website! To contact me send a email to <a href="mailto:xuanruiyong2012@gmail.com">xuanruiyong2012@gmail.com</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Section Start -->
+<section  class="blog" id="blog">
+    <div class="max-width">
+        <h2 class="title">Blogs</h2>
+        <div class="carousel owl-carousel">
+            <div class="card" onclick="location.href='./blog#scams'">
+                <div class="box">
+                    <img src="./imgs/blog/scammer.jpeg" alt="">
+                    <div class="text">How To Prevent Scammers</div>
+                    <p>How to prevent from being scammed</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='./blog#chrome-extensions-malware'">
+                <div class="box">
+                    <img src="./imgs/blog/chromeextensionsmalware.jpeg" alt="">
+                    <div class="text">Chrome Extension</div>
+                    <p>Remove these extension now if you are using them</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='./blog#malware'">
+                <div class="box">
+                    <img src="./imgs/blog/hacker.jpeg" alt="">
+                    <div class="text">Malware</div>
+                    <p>Tip for preventing malware</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section Start-->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get In Touch</div>
+                <p>Hi, here is my contact information.</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Xuan Rui Yong</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">xuanruiyong2012@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Email Me</div>
+                <form action="/email.php">
+                    <div class="field name">
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="field email">
+                        <input type="text" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" name="subject" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message" name="message" required></textarea>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit" value="Send Form">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -83,8 +164,17 @@ html{
 }
 
 /* all similar content styling codes */
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 section{
     padding: 100px 0;
+}
+.about .blog .contact{
+    font-family: 'Poppins', sans-serif;
 }
 .max-width{
     max-width: 1300px;
@@ -121,6 +211,182 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+/* contact section styling */
+.contact .title::after{
+    content: "";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* blog section styling */
+.blog .title::after{
+    content: "";
+    background: #111;
+}
+.blog{
+    color: #fff;
+    background: #111;
+}
+.blog .title::before{
+    background: #fff;
+}
+.blog .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.blog .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+.blog .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blog .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.blog .carousel .card:hover img{
+    transform: scale(1.05);
+    border: 5px solid white;
+}
+.blog .carousel .card:hover{
+    background: crimson;
+    transform: scale(1.05);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot.menu.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+
+}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -475,6 +741,28 @@ footer span a:hover{
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
+    });
+
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
     });
   });
 </script>
