@@ -147,14 +147,14 @@ body{
     flex-wrap: wrap;
 }
 .blog-box{
-    width: 300px;
+    width: 350px;
     border: 1px solid #ececec;
     margin: 20px;
-    min-height: 500px;
+    min-height: 550px;
 }
 .blog-img{
-    width: 295px;
-    height: 310px;
+    width: 345px;
+    height: 350px;
 }
 .blog-img img{
     width: 100%;
@@ -354,6 +354,11 @@ footer span a:hover{
     text-decoration: underline;
 }
 /* responsive media query start */
+@media (max-width: 100%){
+    .blog-container{
+        width: auto;
+    }
+}
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
