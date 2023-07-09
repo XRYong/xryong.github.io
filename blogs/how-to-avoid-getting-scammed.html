@@ -20,9 +20,9 @@
     <div class="max-width">
       <div class="logo"><a href="index.html"><span>X. R. Yong</span></a></div>
       <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="blog.html">Blog</a></li>
-        <li><a href="dl/f-home.html">Files</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li class="active"><a href="../blog.html">Blog</a></li>
+        <li><a href="../../dl/f-home.html">Files</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -31,70 +31,34 @@
   <section class="home" id="home">
     <div class="max-width">
         <div class="home-content">
-            <section id="blog">
-                <div class="blog-heading">
-                    <span>My Newest Post</span>
-                    <h3>My Blog</h3>
+            <div class="blog-container">
+                <div class="img">
+                    <img src="imgs/online-scammer.jpg" alt="Blog Picture">
                 </div>
-                <div class="blog-container">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="imgs/logo.jpeg" alt="Blog Picture">
-                        </div>
-                        <div class="blog-text">
-                            <span>9/July/2023</span>
-                            <a href="blogs/how-to-avoid-getting-scammed.html">How to prevent getting scammed</a>
-                            <p>When cybersecurity is inadequate, ...</p>
-                            <br>
-                            <div class="read">
-                            <a href="blogs/how-to-avoid-getting-scammed.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="imgs/logo.jpeg" alt="Blog Picture">
-                        </div>
-                        <div class="blog-text">
-                            <span>d/m/y</span>
-                            <a href="#">Comming Soon</a>
-                            <p>Comming Soon</p>
-                            <br>
-                            <div class="read">
-                            <a href="blogs/how-to-avoid-getting-scammed.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="imgs/logo.jpeg" alt="Blog Picture">
-                        </div>
-                        <div class="blog-text">
-                            <span>d/m/y</span>
-                            <a href="#">Comming Soon</a>
-                            <p>Comming Soon</p>
-                            <br>
-                            <div class="read">
-                            <a href="blogs/how-to-avoid-getting-scammed.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="imgs/logo.jpeg" alt="Blog Picture">
-                        </div>
-                        <div class="blog-text">
-                            <span>d/m/y</span>
-                            <a href="#">Comming Soon</a>
-                            <p>Comming Soon</p>
-                            <br>
-                            <div class="read">
-                            <a href="blogs/how-to-avoid-getting-scammed.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="head">
+                    <h1>How to avoid getting scammed</h1>
                 </div>
-            </section>
+                <div class="text">
+                    <p>When cybersecurity is inadequate, it can lead to stolen identity and financial loss. Most scams and scammers have two main goals--to steal your money and your identity. You should know what to look for, how they work, and what to do, so you can protect yourself and your finances.</p>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Do not open email from people you don’t know.</li><p>If you are unsure whether an email you received is legitimate, try contacting the sender directly via other means. Do not click on any links in an email unless you are sure it is safe.</p>
+                        <br>
+                        <li>Be careful with links and new website addresses.</li><p>Malicious website addresses may appear almost identical to legitimate sites. Scammers often use a slight variation in spelling or logo to lure you. Malicious links can also come from friends whose email has unknowingly been compromised, so be careful.</p>
+                        <br>
+                        <li>Secure your personal information.</li><p>Before providing any personal information, such as your date of birth, Social Security number, account numbers, and passwords, be sure the website is secure.</p>
+                        <br>
+                        <li>Stay informed on the latest cyber threats.</li><p>Keep yourself up to date on current scams. The Cybersecurity and Infrastructure Security Agency (CISA) can provide you with <a href="https://www.cisa.gov/news-events/cybersecurity-advisories">Alerts</a>.</p>
+                        <br>
+                        <li>Use Strong Passwords.</li><p>Strong passwords are critical to online security. Review CISA guidance on <a href="https://www.cisa.gov/sites/default/files/publications/Cybersecurity%20Awareness%20Month%202021%20-%20Creating%20Passwords%20Tip%20Sheet.pdf">Choosing and Protecting Passwords</a>.</p>
+                        <br>
+                        <li>Keep your software up to date and maintain preventative software programs.</li><p>Keep all of your software applications up to date on your computers and mobile devices. Install software that provides antivirus, firewall, and email filter services.</p>
+                        <br>
+                        <li>Update the operating systems on your electronic devices.</li><p>Make sure your operating systems (OSs) and applications are up to date on all of your electronic devices. Older and unpatched versions of OSs and software are the target of many hacks. Read the CISA security tip on <a href="https://www.cisa.gov/topics/cybersecurity-best-practices">Understanding Patches and Software Updates</a> for more information.</p>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -122,70 +86,43 @@ body{
     font-family: 'Ubuntu', 'sans-serif';
     width: 100%;
 }
-#blog{
-    display: flex;
-    justify-content: center;
+.blog-container li{
+    font-size: 1.5rem;
+}
+.blog-container img{
     align-items: center;
-    flex-direction: column;
-    padding: 40px;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-}
-.blog-heading{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 1000px;
+    height: 600px;
 }
-.blog-heading span{
-    color: crimson;
-}
-.blog-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-    flex-wrap: wrap;
-}
-.blog-box{
-    width: 350px;
-    border: 1px solid #ececec;
-    margin: 20px;
-    min-height: 550px;
-}
-.blog-img{
-    width: 100%;
-    height: auto;
-}
-.blog-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.blog-heading h3{
-    font-size: 2.4rem;
+.blog-container h1{
+    font-size: 3rem;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
 }
-.blog-text{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-}
-.blog-text span{
+.blog-container span{
     color: crimson;
     font-size: 0.9rem;
 }
-.blog-text a{
-    font-size: 1.3rem;
+.blog-container a{
+    font-size: 1rem;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
     border: 0px;
 }
-.blog-text a:hover{
+.blog-container a:hover{
     color: crimson;
     transition: all ease 0.3s;
 }
+.blog-container p{
+    font-size: 1rem;
+}
+.blog-container h3{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+
 html{
     scroll-behavior: smooth;
 }

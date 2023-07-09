@@ -5,26 +5,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-	<title>Home - X. R. Yong</title>
+	<title>Files Repository - X. R. Yong</title>
 	<link rel = "icon" href = "./imgs/logo.jpeg" type = "image/x-icon">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta property="og:image" content="https://yt3.ggpht.com/hKFG6Fw2E1jy9n7cvjrTqFBGiq4hAyQwiASdWFqObY-qi1pP3bUaU60gaHc2O-rpXp-jwe85iMQ=s88-c-k-c0x00ffffff-no-rj-mo"/>
 	<meta property="og:title" content="Xuan Rui Yong"/>
-	<meta name="title" content="Xuan Rui Yong"/>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+	<meta name="title" content="X. R. Yong"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
   <nav class="navbar">
     <div class="max-width">
-      <div class="logo"><a href="index.html"><span>X. R. Yong</span></a></div>
+      <div class="logo"><a href="../index.html"><span>X. R. Yong</span></a></div>
       <ul class="menu">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="dl/f-home.html">Files</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li class="active"><a href="f-home.html">Files</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -33,52 +32,10 @@
   <section class="home" id="home">
     <div class="max-width">
         <div class="home-content">
-            <div class="text-1">Hello, my name is</div>
-            <div class="text-2">X. R. Yong</div>
-            <div class="text-3">And I'm a <span class="typing"></span></div>
-        </div>
-    </div>
-</section>
-<section class="about" id="about">
-    <div class="max-width">
-        <h2 class="title">About Me</h2>
-        <div class="about-content">
-            <div class="column left">
-                <img src="./imgs/logo.jpeg" alt="">
-            </div>
-            <div class="column right">
-                <div class="text">I'm X. R. Yong and I'm a <span class="typing-2"></span></div>
-                <p>Hi, I am Xuan Rui Yong and welcome to my website! To contact me send a email to <a href="mailto:xuanruiyong2012@gmail.com">xuanruiyong2012@gmail.com</a>.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Blog Section Start -->
-<section  class="blog" id="blog">
-    <div class="max-width">
-        <h2 class="title">Blogs</h2>
-        <div class="carousel owl-carousel">
-            <div class="card" onclick="location.href='./blog#scams'">
-                <div class="box">
-                    <img src="./imgs/blog/scammer.jpeg" alt="">
-                    <div class="text">How To Prevent Scammers</div>
-                    <p>How to prevent from being scammed</p>
-                </div>
-            </div>
-            <div class="card" onclick="location.href='./blog#chrome-extensions-malware'">
-                <div class="box">
-                    <img src="./imgs/blog/chromeextensionsmalware.jpeg" alt="">
-                    <div class="text">Chrome Extension</div>
-                    <p>Remove these extension now if you are using them</p>
-                </div>
-            </div>
-            <div class="card" onclick="location.href='./blog#malware'">
-                <div class="box">
-                    <img src="./imgs/blog/hacker.jpeg" alt="">
-                    <div class="text">Malware</div>
-                    <p>Tip for preventing malware</p>
-                </div>
-            </div>
+          <h1>Files Repository</h1>
+          <p>Hi, welcome to my file repository! You can download my files here.</p>
+          <br>
+          <i class="fa fa-download fa-3x">&nbsp;</i><a href="https://github.com/XRYong/xryong.github.io/releases/download/f-storage%231/Start11.exe">Start 11</a>
         </div>
     </div>
 </section>
@@ -91,6 +48,19 @@
   /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
 *{
     margin: 0;
     padding: 0;
@@ -117,20 +87,10 @@ html{
 }
 
 /* all similar content styling codes */
-.contact .contact-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
 section{
     padding: 100px 0;
 }
-.about .blog .contact{
-    font-family: 'Poppins', sans-serif;
-}
 .max-width{
-    min-width: 1300px;
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
@@ -164,87 +124,7 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-/* footer section styling */
-footer{
-    background: #111;
-    padding: 15px 23px;
-    color: #fff;
-    text-align: center;
-}
-footer span a{
-    color: crimson;
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
 
-/* blog section styling */
-.blog .title::after{
-    content: "";
-    background: #111;
-}
-.blog{
-    color: #fff;
-    background: #111;
-}
-.blog .title::before{
-    background: #fff;
-}
-.blog .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-.blog .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-}
-.blog .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.blog .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.blog .carousel .card:hover img{
-    transform: scale(1.05);
-    border: 5px solid white;
-}
-.blog .carousel .card:hover{
-    background: crimson;
-    transform: scale(1.05);
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot.menu.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-
-}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -293,6 +173,9 @@ footer span a:hover{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+.navbar .menu.active a{
+    color: crimson;
+}
 
 /* menu btn styling */
 .menu-btn{
@@ -334,9 +217,10 @@ footer span a:hover{
 .home{
     display: flex;
     background: url("./imgs/background.jpeg") no-repeat center;
-    height: 100vh;
+    height: 200vh;
     color: #fff;
     min-height: 500px;
+    max-height: 1000px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -394,93 +278,6 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-
-/*about section styling */
-.about{
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .title{
-    font-family: 'Ubuntu' , sans-serif;
-    text-align: center;
-    font-weight: 500;
-    font-size: 40px;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-}
-
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.about .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-
-.about .title::after{
-    content: "Who I Am";
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    padding: 5px;
-    background: #fff;
-    font-size: 20px;
-    color: crimson;
-    transform: translateX(-50%);
-}
-
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about .about-content .right{
-    width: 55%;
-}
-
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.about .about-content .right .text span{
-    color: crimson;
-}
-
-.about .about-content .right a{
-    color: crimson;
-}
-
-.max-width{
-    max-width: 800px;
-}
-
-.about .about-content .column{
-    width: 50%;
-}
-
-.about .about-content .left{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 60px;
-}
-
-.about .about-content .right{
-    flex: 100%;
-}
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -488,6 +285,7 @@ footer span a:hover{
         width: 350px;
     }
 }
+
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -584,42 +382,6 @@ footer span a:hover{
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
-    });
-
-    var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Web Designer", "Programmer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Web Designer", "Programmer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
     });
   });
 </script>
