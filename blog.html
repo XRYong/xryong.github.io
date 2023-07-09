@@ -340,6 +340,13 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+.home .max-width{
+  width: 1300px;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
 /* footer section styling */
 footer{
     background: #111;
@@ -355,11 +362,6 @@ footer span a:hover{
     text-decoration: underline;
 }
 /* responsive media query start */
-@media (max-width: 100%){
-    .blog-container{
-        width: auto;
-    }
-}
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
