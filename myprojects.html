@@ -5,7 +5,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-	<title>Home - X. R. Yong</title>
+	<title>Blog - X. R. Yong</title>
 	<link rel = "icon" href = "./imgs/logo.jpeg" type = "image/x-icon">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -30,41 +30,59 @@
         <i class="fas fa-bars"></i>
     </div>
   </nav>
-  <section class="home" id="home">
+<section class="blog" id="blog">
     <div class="max-width">
-        <div class="home-content">
-            <div class="text-1">Hello, my name is</div>
-            <div class="text-2">X. R. Yong</div>
-            <div class="text-3">And I'm a <span class="typing"></span></div>
-        </div>
-    </div>
-</section>
-<section class="about" id="about">
-    <div class="max-width">
-        <h2 class="title">About Me</h2>
-        <div class="about-content">
-            <div class="column left">
-                <img src="./imgs/logo.jpeg" alt="">
-            </div>
-            <div class="column right">
-                <div class="text">I'm X. R. Yong and I'm a <span class="typing-2"></span></div>
-                <p>Hi, I am Xuan Rui Yong and welcome to my website! To contact me send a email to <a href="mailto:xuanruiyong2012@gmail.com">xuanruiyong2012@gmail.com</a>.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Blog Section Start -->
-<section  class="blog" id="blog">
-    <div class="max-width">
-        <h2 class="title">Blogs</h2>
-        <div class="carousel owl-carousel">
-            <div class="card" onclick="location.href='./blogs/how-to-avoid-getting-scammed.html'">
+        <h2 class="title">Blog</h2>
+        <div class="blog-content">
+            <div class="card">
                 <div class="box">
-                    <img src="./blogs/imgs/online-scammer.jpg" alt="">
-                    <div class="text">How To Prevent Scammers</div>
-                    <p>How to prevent from being scammed</p>
+                    <img src="imgs/Windows.png" alt="Blog Images">
+                    <div class="text">Windows Utility V10.0.1</div>
+                    <p>Make your PC faster and better</p>
+                    <a href="https://github.com/XRYong/Windows-Utility/releases">Download Now!</a>
                 </div>
             </div>
+            <div class="card">
+                <div class="box">
+                    <img src="imgs/logo.jpeg" alt="App Images">
+                    <div class="text">More Comming Soon</div>
+                    <p>More Comming Soon...</p>
+                    <a href="#">Download Now!</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="imgs/logo.jpeg" alt="App Images">
+                    <div class="text">More Comming Soon</div>
+                    <p>More Comming Soon...</p>
+                    <a href="#">Download Now!</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="imgs/logo.jpeg" alt="App Images">
+                    <div class="text">More Comming Soon</div>
+                    <p>More Comming Soon...</p>
+                    <a href="#">Download Now!</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="imgs/logo.jpeg" alt="Blog Images">
+                    <div class="text">More Comming Soon</div>
+                    <p>More Comming Soon...</p>
+                    <a href="#">Download Now!</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="imgs/logo.jpeg" alt="Blog Images">
+                    <div class="text">More Comming Soon</div>
+                    <p>More Comming Soon...</p>
+                    <a href="#">Download Now!</a>
+                </div>
+            </div>
+           </div>
         </div>
     </div>
 </section>
@@ -86,7 +104,78 @@
 html{
     scroll-behavior: smooth;
 }
-
+.blog, .teams{
+    color:#fff;
+    background: #111;
+}
+.blog .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.blog .title::after,
+.teams .title::after{
+    background: #111;
+    content: "my posts";
+}
+.blog .blog-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+.blog .blog-content .card:hover{
+    background: crimson;
+}
+.blog .blog-content .card .box{
+    transition: all 0.3s ease;
+}
+.blog .blog-content .card:hover .box{
+    transform: scale(1.05);
+}
+.blog .blog-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.blog .blog-content .card:hover i{
+    color: #fff;
+}
+.blog .blog-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.blog .blog-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog{
+    background: fixed;
+    background: url("imgs/background.jpeg") no-repeat fixed;
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.box a{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box a:hover{
+    cursor: pointer;
+    color: #fff;
+    font-size: 600;
+    transition: all 0.3s ease;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -162,73 +251,6 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
-}
-
-/* blog section styling */
-.blog .title::after{
-    content: "";
-    background: #111;
-}
-.blog{
-    color: #fff;
-    background: #111;
-}
-.blog .title::before{
-    background: #fff;
-}
-.blog .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-.blog .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-}
-.blog .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.blog .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.blog .carousel .card:hover img{
-    transform: scale(1.05);
-    border: 5px solid white;
-}
-.blog .carousel .card:hover{
-    background: crimson;
-    transform: scale(1.05);
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot.menu.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-
 }
 /* navbar styling */
 .navbar{
@@ -329,41 +351,6 @@ footer span a:hover{
 .home .max-width{
   width: 1300px;
   display: flex;
-}
-.home .max-width .row{
-  margin-right: 0;
-}
-.home .home-content .text-1{
-    font-size: 27px;
-}
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
-}
-.home .home-content a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: crimson;
-    background: none;
 }
 /* footer section styling */
 footer{
@@ -508,6 +495,76 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
+    .max-width{
+        max-width: 930px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -521,30 +578,33 @@ footer span a:hover{
     .max-width{
         max-width: 930px;
     }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .blog .blog-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
+    .blog .blog-content .card{
+        width: 100%;
     }
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
     .scroll-up-btn{
         right: 15px;
         bottom: 15px;
